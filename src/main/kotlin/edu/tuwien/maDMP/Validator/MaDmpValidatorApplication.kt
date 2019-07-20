@@ -1,5 +1,9 @@
+/****
+ * author: HasanKhatib
+ */
 package edu.tuwien.maDMP.Validator
 
+import org.springframework.boot.Banner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -7,5 +11,7 @@ import org.springframework.boot.runApplication
 class MaDmpValidatorApplication
 
 fun main(args: Array<String>) {
-	runApplication<MaDmpValidatorApplication>(*args)
+	runApplication<MaDmpValidatorApplication>(*args){
+        setBannerMode(Banner.Mode.OFF)
+    }
 }

@@ -1,0 +1,69 @@
+{{>header}}
+
+<!-- Services Section -->
+<section class="page-section" id="messagesArea">
+    <div class="container ">
+        <div class="">
+            <h1>
+                maDMP Validator!
+            </h1>
+            <p>
+                This tool checks whether machine-actionable dmps conform to rda dmp common standard
+            </p>
+        </div>
+        <form method="POST">
+            <textarea id="dataID" placeholder="Paste your maDMP here"></textarea>
+        </form>
+        <div>
+
+            <button class="btn btn-primary btn-xl js-scroll-trigger" id="button" onclick="validate()"
+                    type="button">Validate</button>
+
+            <a href="https://github.com/hertai86/Validating-machine-actionable-DMP/tree/master/testingExamples"
+               target="_blank" class="btn btn-danger btn-xl float-right mx-1" id="button">
+                maDMP sample file! <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="https://github.com/hertai86/Validating-machine-actionable-DMP/blob/master/schema.json" target="_blank"
+               class="btn btn-dark btn-xl float-right mx-1" id="button">
+                RDA JSON schema file! <i class="fas fa-external-link-alt"></i>
+            </a>
+
+            <label id="vaildresultID"></label>
+            <label id="invaildresultID"></label>
+            <label id="datapathlabelID"></label>
+            <label id="errdataPathID"></label>
+            <label id="messagelabelID"></label>
+            <label id="errmessageID"></label>
+            <label id="allowedValueslabelID"></label>
+            <label id="allowedValuesID"></label>
+        </div>
+
+    </div>
+</section>
+
+<section id="vocabFiles" class="container my-5">
+    <!-- <h2>Custom vocabs for your DMP fields</h2> -->
+    <!--
+        <div class="row my-3">
+          <div class="col-sm-12">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="vocabsFiles" name="Files"
+                onchange="javascript:changeInputText('vocabsFiles','vocabsFilesLabel')">
+              <label class="custom-file-label" id="vocabsFilesLabel" for="vocabsFiles">Allowed files types</label>
+            </div>
+          </div>
+        </div> -->
+
+    <!-- <div class="row my-3">
+      <div class="col-sm-12">
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="distCertificates" name="Files"
+          onchange="javascript:changeInputText('distCertificates','distCertificatesLabel')">
+          <input type="hidden" id="certificateExistance" value="false">
+          <label class="custom-file-label" id="distCertificatesLabel" for="customFile">Allowed distribution certificates</label>
+        </div>
+      </div>
+    </div> -->
+</section>
+
+{{>footer}}
