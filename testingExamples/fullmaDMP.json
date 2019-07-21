@@ -3,8 +3,8 @@
     "title": "Finding The Impact of GDP on Education Attainment in Austria",
     "description": "In this project we will try to find how the education attainment in Germany is affected by the gross domestic product. This research depends on two datasets (Education Attainment for Population Aged 15-64, 1870-2010) and (GDP World Bank Data).",
     "dmp_id":{
-      "dmp_id":"abc123",
-      "dmp_id_type":"text and number"},
+      "identifier":"abc123",
+      "identifier_type":"text and number"},
     "language": "en",
     "created": "2019-04-10T00:00:00+00:00",
     "modified": "2019-04-22T00:00:00+00:00",
@@ -15,8 +15,8 @@
       "mail": "e11848870@student.tuwien.ac.at",
       "name": "Ahmad Alhirthani",
       "contact_id": {
-        "contact_id": "https://orcid.org/0000-0003-0241-0268",
-        "contact_id_type": "HTTP-ORCID"
+        "identifier": "https://orcid.org/0000-0003-0241-0268",
+        "identifier_type": "HTTP-ORCID"
       }
     },
     "dm_staff": [{
@@ -24,8 +24,8 @@
       "name": "Ahmad Alhirthani",
       "contributor_type": "",
       "user_id": {
-        "user_id": "https://orcid.org/0000-0003-0241-0268",
-        "contact_id_type": "HTTP-ORCID"
+        "identifier": "https://orcid.org/0000-0003-0241-0268",
+        "identifier_type": "HTTP-ORCID"
       }
     }],
     "cost":[{
@@ -33,6 +33,7 @@
       "currency_code":"USD",
       "value":123
     }],
+
     "project":[{
       "title":"project title",
       "description":"project description",
@@ -41,11 +42,11 @@
       "funding":[{
         "funding_status": "planned",
         "grant_id":{
-          "grant_id":"grant id 123",
-          "grant_id_type":"grant id type 123"},
+          "identifier":"grant id 123",
+          "identifier_type":"grant id type 123"},
         "funder_id":{
-          "funder_id":"funder id 123",
-          "funder_id_type":"funder id type 123"
+          "identifier":"funder id 123",
+          "identifier_type":"funder id type 123"
         }
       }]
     }],
@@ -59,21 +60,23 @@
         "preservation_statement":"text of preservation statement ",
         "issued": "2019-04-10T20:20:39+00:00",
         "dataset_id":{
-          "dataset_id":"abc123",
-          "grant_id_type":"grant id type"},
+          "identifier":"abc123",
+          "identifier_type":"grant id type"},
         "personal_data": "no",
         "sensitive_data": "no",
         "security_and_privacy":[{
           "title": "The security_and_privacy Schema",
-          "security and privacy text":""}],
+          "description":""}],
         "technical_resource":[{
           "resource_id":{
-            "technical_resource_id":"abc",
-            "technical_resource_id_type":"abc"}}],
+            "identifier":"abc",
+            "identifier_type":"abc"}}],
         "metadata":[{
+          "description":  "blah",
+          "language":  "EN",
           "metadata_id":{
-            "metadata_id":"metadata_id",
-            "metadata_id_type":"metadata_id_type"}}],
+            "identifier":"metadata_id",
+            "identifier_type":"metadata_id_type"}}],
         "distribution": [
           {
             "title": "Education Attainment for Population Aged 15 and Over",

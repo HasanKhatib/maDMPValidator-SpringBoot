@@ -44,19 +44,19 @@ var data={
           "type": "object",
           "title": "The dmp_id Schema",
           "required": [
-            "dmp_id",
-            "dmp_id_type"
+            "identifier",
+            "identifier_type"
           ],
           "properties": {
-            "dmp_id": {
-              "$id": "#/properties/dmp/properties/dmp_id/properties/dmp_id",
+            "identifier": {
+              "$id": "#/properties/dmp/properties/dmp_id/properties/identifier",
               "type": "string",
-              "title": "The dmp_id Schema"
+              "title": "dmp identifier"
             },
-            "dmp_id_type": {
-              "$id": "#/properties/dmp/properties/dmp_id/properties/dmp_id_type",
+            "identifier_type": {
+              "$id": "#/properties/dmp/properties/dmp_id/properties/identifier_type",
               "type": "string",
-              "title": "The dmp_id_type Schema"
+              "title": "identifier type"
             }
           }
         },
@@ -127,7 +127,7 @@ var data={
               "title": "The Mail Schema",
               "default": null,
               "examples": [
-                "hertani86@gmail.com"
+                "user@mail.com"
               ],
               "format": "email"
             },
@@ -136,7 +136,7 @@ var data={
               "type": "string",
               "title": "The Name Schema",
               "examples": [
-                "Ahmad Alhirthani"
+                "Last, First"
               ]
             },
             "contact_id": {
@@ -144,20 +144,20 @@ var data={
               "type": "object",
               "title": "The Contact_id Schema",
               "required": [
-                "contact_id",
-                "contact_id_type"
+                "identifier",
+                "identifier_type"
               ],
               "properties": {
-                "contact_id": {
-                  "$id": "#/properties/dmp/properties/contact/properties/contact_id/properties/contact_id",
+                "identifier": {
+                  "$id": "#/properties/dmp/properties/contact/properties/contact_id/properties/identifier",
                   "type": "string",
                   "title": "The Contact_id Schema",
                   "examples": [
-                    "https://orcid.org/0000-0002-9909-227X"
+                    "https://DOMAIN.com"
                   ]
                 },
-                "contact_id_type": {
-                  "$id": "#/properties/dmp/properties/contact/properties/contact_id/properties/contact_id_type",
+                "identifier_type": {
+                  "$id": "#/properties/dmp/properties/contact/properties/contact_id/properties/identifier_type",
                   "type": "string",
                   "title": "The Contact_id_type Schema",
                   "examples": [
@@ -183,7 +183,7 @@ var data={
                 "title": "The mbox Schema",
                 "default": null,
                 "examples": [
-                  "hertani86@gmail.com"
+                  "user@mail.com"
                 ],
                 "format": "email"
               },
@@ -192,7 +192,7 @@ var data={
                 "type": "string",
                 "title": "The Name Schema",
                 "examples": [
-                  "Ahmad Alhirthani"
+                  "Last, First"
                 ]
               },
               "contributor_type": {
@@ -205,19 +205,20 @@ var data={
                 "type": "object",
                 "title": "The user_id Schema",
                 "required": [
-                  "user_id"
+                  "identifier",
+                  "identifier_type"
                 ],
                 "properties": {
-                  "user_id": {
-                    "$id": "#/properties/dmp/properties/dm_staff/items/properties/user_id/properties/user_id",
+                  "identifier": {
+                    "$id": "#/properties/dmp/properties/dm_staff/items/properties/user_id/properties/identifier",
                     "type": "string",
                     "title": "The user_id Schema",
                     "examples": [
-                      "https://orcid.org/0000-0002-9909-227X"
+                      "https://DOMAIN.com"
                     ]
                   },
-                  "contact_id_type": {
-                    "$id": "#/properties/dmp/properties/dm_staff/items/properties/user_id/properties/user_id_type",
+                  "identifier_type": {
+                    "$id": "#/properties/dmp/properties/dm_staff/items/properties/user_id/properties/identifier_type",
                     "type": "string",
                     "title": "The user_id_type Schema",
                     "examples": [
@@ -339,20 +340,20 @@ var data={
                       "type": "object",
                       "title": "The grant_id Schema",
                       "required": [
-                        "grant_id",
-                        "grant_id_type"
+                        "identifier",
+                        "identifier_type"
                       ],
                       "properties": {
-                        "grant_id": {
-                          "$id": "#/properties/dmp/properties/project/items/properties/funding/items/properties/grant_id/properties/grant_id",
+                        "identifier": {
+                          "$id": "#/properties/dmp/properties/project/items/properties/funding/items/properties/grant_id/properties/identifier",
                           "type": "string",
                           "title": "The Contact_id Schema",
                           "examples": [
-                            "https://orcid.org/0000-0001-9909-227X"
+                            "https://DOMAIN.com"
                           ]
                         },
-                        "grant_id_type": {
-                          "$id": "#/properties/dmp/properties/project/items/properties/funding/items/properties/grant_id/properties/grant_id_type",
+                        "identifier_type": {
+                          "$id": "#/properties/dmp/properties/project/items/properties/funding/items/properties/grant_id/properties/identifier_type",
                           "type": "string",
                           "title": "The Contact_id_type Schema",
                           "examples": [
@@ -366,17 +367,17 @@ var data={
                       "type": "object",
                       "title": "The funder_id Schema",
                       "required": [
-                        "funder_id",
-                        "funder_id_type"
+                        "identifier",
+                        "identifier_type"
                       ],
                       "properties": {
-                        "funder_id": {
-                          "$id": "#/properties/dmp/properties/project/items/properties/funding/items/properties/funder_id/properties/funder_id",
+                        "identifier": {
+                          "$id": "#/properties/dmp/properties/project/items/properties/funding/items/properties/funder_id/properties/identifier",
                           "type": "string",
                           "title": "The Contact_id Schema"
                         },
-                        "funder_id_type": {
-                          "$id": "#/properties/dmp/properties/project/items/properties/funding/items/properties/funder_id/properties/funder_id_type",
+                        "identifier_type": {
+                          "$id": "#/properties/dmp/properties/project/items/properties/funding/items/properties/funder_id/properties/identifier_type",
                           "type": "string",
                           "title": "The Contact_id_type Schema"
                         }
@@ -460,16 +461,17 @@ var data={
                 "type": "object",
                 "title": "The dataset_id Schema",
                 "required": [
-                  "dataset_id"
+                  "identifier",
+                  "identifier_type"
                 ],
                 "properties": {
-                  "dataset_id": {
-                    "$id": "#/properties/dmp/properties/dataset/items/properties/dataset_id/properties/dataset_id",
+                  "identifier": {
+                    "$id": "#/properties/dmp/properties/dataset/items/properties/dataset_id/properties/identifier",
                     "type": "string",
                     "title": "The dataset_id Schema"
                   },
-                  "grant_id_type": {
-                    "$id": "#/properties/dmp/properties/dataset/items/properties/dataset_id/properties/dataset_id_type",
+                  "identifier_type": {
+                    "$id": "#/properties/dmp/properties/dataset/items/properties/dataset_id/properties/identifier_type",
                     "type": "string",
                     "title": "The dataset_id_type Schema"
                   }
@@ -543,17 +545,17 @@ var data={
                       "type": "object",
                       "title": "The resource_id Schema",
                       "required": [
-                        "technical_resource_id",
-                        "technical_resource_id_type"
+                        "identifier",
+                        "identifier_type"
                       ],
                       "properties": {
-                        "technical_resource_id": {
-                          "$id": "#/properties/dmp/properties/dataset/items/properties/technical_resource/properties/resource_id/properties/technical_resource_id",
+                        "identifier": {
+                          "$id": "#/properties/dmp/properties/dataset/items/properties/technical_resource/properties/resource_id/properties/identifier",
                           "type": "string",
                           "title": "The technical_resource_id Schema"
                         },
-                        "technical_resource_id_type": {
-                          "$id": "#/properties/dmp/properties/dataset/items/properties/technical_resource/properties/resource_id/properties/technical_resource_id_type",
+                        "identifier_type": {
+                          "$id": "#/properties/dmp/properties/dataset/items/properties/technical_resource/properties/resource_id/properties/identifier_type",
                           "type": "string",
                           "title": "The technical_resource_id_type Schema"
                         }
@@ -584,17 +586,17 @@ var data={
                       "type": "object",
                       "title": "The metadata_id Schema",
                       "required": [
-                        "metadata_id",
-                        "metadata_id_type"
+                        "identifier",
+                        "identifier_type"
                       ],
                       "properties": {
-                        "metadata_id": {
-                          "$id": "#/properties/dmp/properties/dataset/items/properties/metadata/properties/metadata_id/properties/metadata_id",
+                        "identifier": {
+                          "$id": "#/properties/dmp/properties/dataset/items/properties/metadata/properties/metadata_id/properties/identifier",
                           "type": "string",
                           "title": "The metadata_id Schema"
                         },
-                        "metadata_id_type": {
-                          "$id": "#/properties/dmp/properties/dataset/items/properties/metadata/properties/metadata_id/properties/metadata_id_type",
+                        "identifier_type": {
+                          "$id": "#/properties/dmp/properties/dataset/items/properties/metadata/properties/metadata_id/properties/identifier_type",
                           "type": "string",
                           "title": "The metadata_id_type Schema"
                         }
