@@ -1,5 +1,5 @@
 # maDMP Validator - Spring Boot Version
-Based on [Validating-machine-actionable-DMP](https://github.com/hertai86/Validating-machine-actionable-DMP), but with advanced back-end functionalities. This tool checks whether machine-actionable dmps conform to rda dmp common standard.
+Based on [Validating-machine-actionable-DMP](https://github.com/hertai86/Validating-machine-actionable-DMP), but with advanced back-end functionalities. This tool checks whether machine-actionable dmps conform to rda dmp common standard, and check maDMPs for specific vocabularies determined by the on who will use this tool.
 
 ![maDMP validator Pro backend](./src/main/resources/static/imgs/SpringBoot-Kotlin.svg)
 ![maDMP validator Pro](./src/main/resources/static/imgs/hasankhatib-maDMPValidator-SpringBoot.svg)
