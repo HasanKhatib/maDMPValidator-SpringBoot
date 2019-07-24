@@ -5,10 +5,20 @@
     <div class="container ">
         <div class="">
             <h1>
-                maDMP Validator!
+                maDMP Validator - Boot!
             </h1>
+            <div class="form-group">
+                <a href="https://github.com/HasanKhatib/maDMPValidator-SpringBoot" target="_blank">
+                    <img src="/imgs/hasankhatib-maDMPValidator-SpringBoot.svg" alt="HasanKhatib Github badge"></a>
+                <a href="https://spring.io/guides/tutorials/spring-boot-kotlin/" target="_blank">
+                    <img src="/imgs/SpringBoot-Kotlin.svg" alt="">
+                </a>
+
+            </div>
             <p>
-                This tool checks whether machine-actionable dmps conform to rda dmp common standard
+                This tool is based on <a href="https://github.com/hertai86/Validating-machine-actionable-DMP"
+                                         target="_blank">the maDMP Schema Validation Project.</a>
+                Beside conforming machine-actionable DMPs to RDA common standard, it adds custom validation for specific vocabs determined by the deploying institution.
             </p>
         </div>
         <form method="POST">
@@ -28,14 +38,11 @@
                 RDA JSON schema file! <i class="fas fa-external-link-alt"></i>
             </a>
 
-            <label id="vaildresultID"></label>
-            <label id="invaildresultID"></label>
-            <label id="datapathlabelID"></label>
-            <label id="errdataPathID"></label>
-            <label id="messagelabelID"></label>
-            <label id="errmessageID"></label>
-            <label id="allowedValueslabelID"></label>
-            <label id="allowedValuesID"></label>
+            <label id="validationMessage"></label>
+            <label id="schemaErrorPath"></label>
+            <label id="schemaErrorMessage"></label>
+            <label id="schemaAllowedEnums"></label>
+
         </div>
 
     </div>

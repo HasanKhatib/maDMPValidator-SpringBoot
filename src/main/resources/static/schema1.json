@@ -620,13 +620,11 @@ var data={
               "distribution": {
                 "$id": "#/properties/dmp/properties/dataset/items/properties/distribution",
                 "type": "array",
-                "additionalProperties":  false,
                 "title": "The Distribution Schema",
                 "items": {
                   "$id": "#/properties/dmp/properties/dataset/items/properties/distribution/items",
                   "type": "object",
                   "title": "The Items Schema",
-                  "additionalProperties":  false,
                   "required": [
                     "title",
                     "data_access"

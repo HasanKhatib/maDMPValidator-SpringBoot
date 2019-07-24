@@ -8,15 +8,16 @@ var error_list = "";
 
 function validate() {
     isValidationPassed = true;
-    document.getElementById('vaildresultID').innerHTML = "";
-    document.getElementById('invaildresultID').innerHTML = "";
-    document.getElementById('datapathlabelID').innerHTML = "";
-    document.getElementById('errdataPathID').innerHTML = "";
-    document.getElementById('messagelabelID').innerHTML = "";
-    document.getElementById('errmessageID').innerHTML = "";
-    document.getElementById('allowedValueslabelID').innerHTML = "";
-    document.getElementById('allowedValuesID').innerHTML = "";
-    maDMP = document.getElementById("dataID").value;
+    document.getElementById('validationMessage').innerHTML = "";
+    document.getElementById('schemaErrorPath').innerHTML = "";
+    document.getElementById('schemaErrorMessage').innerHTML = "";
+    document.getElementById('schemaAllowedEnums').innerHTML = "";
+
+    document.getElementById('validationMessage').classList.remove('text-success');
+    document.getElementById('validationMessage').classList.remove('text-danger');
+
+
+        maDMP = document.getElementById("dataID").value;
     maDMPJSON = JSON.parse(maDMP);
     //var maDMPJSON = JSON.parse(maDMP.substring(1, maDMP.length));
     console.log("maDMPJSON object:");
@@ -30,18 +31,17 @@ function validate() {
         console.log("validate.errors");
         console.log(validate.errors);
         var errors = validate.errors;
-        document.getElementById('invaildresultID').innerHTML = "Not validated maDMP";
-        document.getElementById('errdataPathID').innerHTML = "Data Path: " + errors[0]['dataPath'];
-        document.getElementById('errmessageID').innerHTML = "Message: " + errors[0]['message'];
+        document.getElementById('validationMessage').innerHTML = "Not validated maDMP";
+        document.getElementById('schemaErrorPath').innerHTML = "Data Path: " + errors[0]['dataPath'];
+        document.getElementById('schemaErrorMessage').innerHTML = "Message: " + errors[0]['message'];
         if (errors[0]['params']['allowedValues']) {
-            document.getElementById('allowedValuesID').innerHTML = "Allowed Values: " + errors[0]['params']['allowedValues'];
+            document.getElementById('schemaAllowedEnums').innerHTML = "Allowed Values: " + errors[0]['params']['allowedValues'];
         } else {
-            document.getElementById('allowedValueslabelID').innerHTML = "";
-            document.getElementById('allowedValuesID').innerHTML = "";
+            document.getElementById('schemaAllowedEnums').innerHTML = "";
         }
-        document.getElementById('invaildresultID').classList.add('text-danger');
-        document.getElementById('errdataPathID').classList.add('text-danger');
-        document.getElementById('errmessageID').classList.add('text-danger');
+        document.getElementById('validationMessage').classList.add('text-danger');
+        document.getElementById('schemaErrorPath').classList.add('text-danger');
+        document.getElementById('schemaErrorMessage').classList.add('text-danger');
 
         console.log("invalid");
     }
@@ -50,24 +50,27 @@ function validate() {
     //validate vocabs files
     else {
         isValidationPassed = true;
-        printResult();
         $.ajax({
             method: "POST",
             url: "/api/",
             data: {dmp: maDMP}
         }).done(function (msg) {
+            isValidationPassed = (msg === '')
             console.log(msg);
+            if(!isValidationPassed)
+                error_list = msg;
+            printResult();
         });
 
     }
 }
 
 function printResult() {
-    document.getElementById('vaildresultID').innerHTML =
+    document.getElementById('validationMessage').innerHTML =
         isValidationPassed
-            ? error_list
-            : "Validated - the maDMP instance is conform the the schema";
-    document.getElementById('vaildresultID').classList.add(
+            ? "Validated - the maDMP instance is conform the the schema and vocabulary files!"
+            : error_list;
+    document.getElementById('validationMessage').classList.add(
         isValidationPassed
             ? 'text-success'
             : 'text-danger'

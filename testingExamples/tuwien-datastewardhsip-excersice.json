@@ -1,0 +1,183 @@
+{
+  "dmp": {
+    "title": "CORRELATING LA MUSEUM VISITORS TO CRIMES IN LA",
+    "description": "This data management plan provides assistance and clarification of the process of testing the correlation between numbers of museums visitors’ city and numbers of crimes in Los Angeles.",
+    "dmp_id": {
+      "identifier": "abc123",
+      "identifier_type": "text and number"
+    },
+    "language": "en",
+    "created": "2019-04-10T00:00:00+00:00",
+    "modified": "2019-04-22T00:00:00+00:00",
+    "ethical_issues_exist": "no",
+    "ethical_issues_report": "no",
+    "ethical_issues_description": "n/a",
+    "contact": {
+      "mail": "hasankhatib91@gmail.com",
+      "name": "Alkhatib Hasan",
+      "contact_id": {
+        "identifier": "https://orcid.org/0000-0002-1223-9620",
+        "identifier_type": "HTTP-ORCID"
+      }
+    },
+    "dm_staff": [
+      {
+        "mbox": "hasankhatib91@gmail.com",
+        "name": "Alkhatib Hasan",
+        "contributor_type": "",
+        "user_id": {
+          "identifier": "https://orcid.org/0000-0002-1223-9620",
+          "identifier_type": "HTTP-ORCID"
+        }
+      },
+      {
+        "mbox": "carlosvargas9103@gmail.com",
+        "name": "Carlos Alberto Vargas Rivera",
+        "contributor_type": "",
+        "user_id": {
+          "identifier": "https://orcid.org/0000-0002-1757-3249",
+          "identifier_type": "HTTP-ORCID"
+        }
+      }
+    ],
+    "cost": [
+      {
+        "title": "Finance",
+        "currency_code": "EUR",
+        "value": 123
+      }
+    ],
+    "project": [
+      {
+        "title": "TU Wien - Data Stewardship 2019S - Exercise 1",
+        "description": "The exercise consists of two parts: data science use case - to design an experiment that uses open data; data management - to create a data management plan and publish your experiment;",
+        "project_start": "2019-03-11T00:00:00+00:00",
+        "project_end": "2019-04-11T00:00:00+00:00",
+        "funding": [
+          {
+            "funding_status": "planned",
+            "grant_id": {
+              "identifier": "1",
+              "identifier_type": "Other"
+            },
+            "funder_id": {
+              "identifier": "https://orcid.org/0000-0002-1223-9620",
+              "identifier_type": "HTTP-ORCID"
+            }
+          }
+        ]
+      }
+    ],
+    "dataset": [
+      {
+        "title": "LA crime data from 2010 to present",
+        "description": "LA crime data from 2010 to present",
+        "type": "csv",
+        "keyword": "LA,2010,Crime",
+        "data_quality_assurance": "n/a",
+        "preservation_statement": "n/a",
+        "issued": "2019-12-31T00:00:00+00:00",
+        "dataset_id": {
+          "identifier": "xxxx",
+          "identifier_type": "other"
+        },
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "security_and_privacy": [
+          {
+            "title": "n/a",
+            "description": "n/a"
+          }
+        ],
+        "technical_resource": [
+          {
+            "resource_id": {
+              "identifier": "n/a",
+              "identifier_type": "Other"
+            }
+          }
+        ],
+        "metadata": [
+          {
+            "description": "DublinCore",
+            "language": "EN",
+            "metadata_id": {
+              "identifier": "http://dublincore.org/",
+              "identifier_type": "URL"
+            }
+          }
+        ],
+        "distribution": [
+          {
+            "title": "REPOSITORY",
+            "description": "REPOSITORY Desc",
+            "format": "text",
+            "byte_size": 1024,
+            "data_access": "open",
+            "access_url": "https://doi.org/10.5282/zenodo.2647620",
+            "license": [
+              {
+                "license_ref": "https://creativecommons.org/licenses/by/3.0/",
+                "start_date": "2018-12-31T00:00:00+00:00"
+              }
+            ],
+            "host": {
+              "title": "host title",
+              "description": "n/a",
+              "support_versioning": "yes",
+              "backup_type": "n/a",
+              "backup_frequency": "n/a",
+              "availability": "",
+              "certified_with": "ISO1636340",
+              "geo_location": "AT",
+              "pid_system": "n/a"
+            }
+          }
+        ]
+      },
+      {
+        "title": "LA museum visitors",
+        "description": "LA museum visitors",
+        "type": "CSV",
+        "keyword": "LA,museum,visitors",
+        "metadata":  [
+          {
+            "description": "DublinCore",
+            "language": "EN",
+            "metadata_id": {
+              "identifier": "http://dublincore.org/",
+              "identifier_type": "URL"
+            }
+          }
+        ],
+        "issued": "2015-05-12T00:00:00+00:00",
+        "dataset_id": {
+          "identifier": "10.5281/zenodo.1200361",
+          "identifier_type": "DOI-RAW"
+        },
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "security_and_privacy": [],
+        "data_quality_assurance": "unknown",
+        "distribution": [
+          {
+            "title": "REPOSITORY",
+            "description": "REPOSITORY DESCRIPTION",
+            "format": "CSV",
+            "byte_size": 1024,
+            "download_url": "https://github.com/HasanKhatib/maDMPTranslator/tree/master/resources/DMPs/JSON",
+            "access_url": "https://github.com/HasanKhatib/maDMPTranslator/tree/master/resources/DMPs/JSON",
+            "data_access": "open",
+            "license": [
+              {
+                "license_ref": "https://creativecommons.org/licenses/by/3.0/",
+                "start_date": "2018-12-31T00:00:00+00:00"
+              }
+            ],
+            "available_till": "2019-12-31T00:00:00+00:00"
+          }
+        ]
+      }
+    ]
+  }
+}

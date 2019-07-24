@@ -1,5 +1,5 @@
-/****
- * author: HasanKhatib
+/***
+ * @author: Hasan Alkhatib (HasanKhatib)
  */
 package edu.tuwien.maDMP.Validator.controllers
 
