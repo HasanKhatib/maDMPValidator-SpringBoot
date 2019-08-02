@@ -30,20 +30,25 @@ class ValidationController {
             val mapper = jacksonObjectMapper()
             var maDMP: maDMP = mapper.readValue(dmp)
 
-            // Hosts Geolocation
-            var hostsGeoLocationsError = vocabsChecker.checkHostGeoLocationVocabs(maDMP)
-            if (hostsGeoLocationsError.isNotEmpty())
-                errorList.add(hostsGeoLocationsError)
-
             // dataset types
             var datasetTypesError = vocabsChecker.checkDatasetType(maDMP)
             if (datasetTypesError.isNotEmpty())
                 errorList.add(datasetTypesError)
 
+            // Hosts Geolocation
+            var hostsGeoLocationsError = vocabsChecker.checkHostGeoLocationVocabs(maDMP)
+            if (hostsGeoLocationsError.isNotEmpty())
+                errorList.add(hostsGeoLocationsError)
+
             // dist host certifications
             var hostsCertificationError = vocabsChecker.checkHostCertification(maDMP)
             if (hostsCertificationError.isNotEmpty())
                 errorList.add(hostsCertificationError)
+
+            // dist host certifications
+            var hostsPIDError = vocabsChecker.checkHostPID(maDMP)
+            if (hostsPIDError.isNotEmpty())
+                errorList.add(hostsPIDError)
 
             errorList = errorList.map { "$it <br/>" }.toMutableList()
             return if (errorList.isNotEmpty()) errorList.joinToString("") else ""
