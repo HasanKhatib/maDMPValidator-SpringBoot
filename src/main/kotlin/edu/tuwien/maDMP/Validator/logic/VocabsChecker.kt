@@ -37,7 +37,7 @@ class VocabsChecker {
         if (!ClassPathResource("vocabs/dmp-dataset-distribution-host-pid.txt").exists()) return ""
 
         val resource = ClassPathResource("vocabs/dmp-dataset-distribution-host-pid.txt").file
-        var fileVocabs = String(Files.readAllBytes(resource.toPath())).lines().map { it.trim() }
+        val fileVocabs = String(Files.readAllBytes(resource.toPath())).lines().map { it.trim() }
 
         maDMPPid?.forEach {
             outOfVocabs += if (fileVocabs.contains(it?.trim())) "" else {
