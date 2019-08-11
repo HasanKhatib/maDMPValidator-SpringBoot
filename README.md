@@ -16,11 +16,10 @@ Thats all :)
 
 ### How to run it?
 Start by cloning this repository to your machine (`git clone https://github.com/HasanKhatib/maDMPValidator-SpringBoot.git`).
-Then follow the next steps (I will consider IntelliJ as your IDE for the next steps):
-- From File -> Open
-- As this cloned directory has `pom.xml` file, you will see the directory as a project that can be opened
-- Import and Generate sources from the `pom.xml` maven file
-- Click run, then go to http://localhost:8080/
+Then use the next maven command in the project directory:
+`mvn spring-boot:run`
+
+Now, go to http://localhost:8080/
 
 ![maDMP Validator Pro](https://user-images.githubusercontent.com/1809095/61815958-a2e1d480-ae4b-11e9-9f29-d4dfc90ba9f9.png)
 
