@@ -1,6 +1,8 @@
 # maDMP Validator - Spring Boot Version
 Based on [Validating-machine-actionable-DMP](https://github.com/hertai86/Validating-machine-actionable-DMP), but with advanced back-end functionalities. This tool checks whether machine-actionable dmps conform to rda dmp common standard, and check maDMPs for specific vocabularies determined by the on who will use this tool.
 
+Supported vocabulary files are listed in [Configure maDMP Vocabulary](https://github.com/HasanKhatib/maDMPValidator-SpringBoot#configure-madmp-vocabulary) section.
+
 ![maDMP validator Pro backend](./src/main/resources/static/imgs/SpringBoot-Kotlin.svg)
 ![maDMP validator Pro](./src/main/resources/static/imgs/hasankhatib-maDMPValidator-SpringBoot.svg)
 
@@ -26,6 +28,13 @@ Now, go to http://localhost:8080/
 
 ### Configure maDMP vocabulary
 This directory `/maDMPValidator-SpringBoot/src/main/resources/vocabs/dmp-dataset-type.txt` has the vocabulary files named after the entity that will be checked. You can update each file to check the maDMP against your own vocabulary and allowed values.
+
+#### Supported fields for vocab validation:
+- **Certificats** for Dataset distribution hosts
+- **GeoLocation** for Dataset distribution hosts
+- **Types** for datasets
+- **Funding** status for DMP projects
+
 
 * The next screenshot shows the GeoLocations Allowed for datasets distribtion hosts:
 ![maDMP Validator Pro vocabs](https://user-images.githubusercontent.com/1809095/61816712-37990200-ae4d-11e9-9a8a-725dba0190cb.png)
