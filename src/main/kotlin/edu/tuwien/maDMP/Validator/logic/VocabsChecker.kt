@@ -21,7 +21,7 @@ class VocabsChecker {
 
         datasetTypes?.forEach {
             outOfVocabs += if (fileVocabs.contains(it?.trim())) "" else {
-                if (outOfVocabs.isNotEmpty()) ", $it" else "Dataset types vocab doesn't has the next vocabs: $it"
+                if (outOfVocabs.isNotEmpty()) ", $it" else "Dataset types vocab do not have the next vocabs: $it"
             }
         }
         return if (outOfVocabs.isNotEmpty()) outOfVocabs else ""
@@ -41,7 +41,7 @@ class VocabsChecker {
 
         maDMPPid?.forEach {
             outOfVocabs += if (fileVocabs.contains(it?.trim())) "" else {
-                if (outOfVocabs.isNotEmpty()) ", $it" else "Hosts PID System vocab doesn't has the next vocabs: $it"
+                if (outOfVocabs.isNotEmpty()) ", $it" else "Hosts PID System vocab do not have the next vocabs: $it"
             }
         }
         return if (outOfVocabs.isNotEmpty()) outOfVocabs else ""
@@ -62,7 +62,7 @@ class VocabsChecker {
 
         geoLocations?.forEach {
             outOfVocabsLocation += if (fileVocabs.contains(it?.trim())) "" else {
-                if (outOfVocabsLocation.isNotEmpty()) ", $it" else "Hosts Geolocation vocab doesn't has the next vocabs: $it"
+                if (outOfVocabsLocation.isNotEmpty()) ", $it" else "Hosts Geolocation vocab do not have the next vocabs: $it"
             }
         }
         return if (outOfVocabsLocation.isNotEmpty()) outOfVocabsLocation else ""
@@ -82,7 +82,7 @@ class VocabsChecker {
 
         maDMPCertifications?.forEach {
             outOfVocabs += if (vocabsCertifications.contains(it?.trim())) "" else {
-                if (outOfVocabs.isNotEmpty()) ", $it" else "Hosts Certifications vocab doesn't has the next vocabs: $it"
+                if (outOfVocabs.isNotEmpty()) ", $it" else "Hosts Certifications vocab do not have the next vocabs: $it"
             }
         }
         return if (outOfVocabs.isNotEmpty()) outOfVocabs else ""
